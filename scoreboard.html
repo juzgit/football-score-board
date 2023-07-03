@@ -7,20 +7,35 @@
     <link rel="stylesheet" href="scoreboard.css">
 </head>
 <body>
+    
     <div class="score-container">
         <div class="time-wrapper">
-            <span id="minutes"></span>
-            <span id="seconds"></span>
+           <div class="controller">
+             <span id="minutes">00</span>:<span id="seconds">00</span>
+           </div> 
         </div>
-        
+
         <div class="team1">
-            <p class="teamName1"></p>
+            <div class="team1kit"></div>
+                <div class="backgroundName">
+                    <p class="teamName1">INT</p>
+           </div> 
+            
         </div>
-        <div class="score1">0</div>  
-            <p class="minus">-</p>
-        <div class="score2">0</div>
+
+       <div class="scoresHolder">
+            <div class="score1">0</div>  
+                <p class="minus">|</p>
+                    <div class="score2">0</div>
+       </div>
+        
+       
         <div class="team2">
-            <p class="teamName"></p>
+            <div class="team2kit"></div>
+                <div class="backgroundName">
+                    <p class="teamName2">MCI</p>
+                </div>
+           
         </div>
     </div>
 

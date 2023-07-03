@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background-color: #3562A6;
+    padding: 0;
+    margin: 0;
+}
+
+.score-container{
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    width: max-content;
+}
+
+.time-wrapper{
+    margin-right: 3px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* styling the teams elements */
+.team1, .team2{
+    display: flex;
+    align-items: center;
+    background-color: #0E1E5B;
+    height: 25px;
+    padding: 5px;
+}
+
+.team1{
+    padding-right: 11px;
+}
+
+.team2{
+    padding-left: 11px;
+}
+
+.team1kit{
+    background-color: rgba(6, 6, 122, 0.5);
+}
+
+.teamName1, .teamName2{
+    color: white;
+}
+
+/* stying the scores */
+.scoresHolder{
+    display: flex;
+    align-items: center;
+    background-color: #091442;
+    height: 25px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left:  5px;
+}
+
+.minus{
+    margin-left: 4px;
+    margin-right: 4px;
+    color:  #0E1E5B;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.score1{
+    margin-left: 2px;
+    color: white;
+}
+
+.score2{
+    color:white
+}
+
