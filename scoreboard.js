@@ -1,38 +1,37 @@
 window.onload = function(){
-    let minutesEl = document.getElementsByClassName("minutes");
-    let secondsEl = document.getElementsByClassName("seconds");
+    let minutesEl = document.querySelector(".minutes");
+    let secondsEl = document.querySelector(".seconds");
     let minutes = 0;
     let seconds = 0;
-    let buttonStart = document.getElementsByClassName("start");
-    let buttonPause = document.getElementsByClassName("pause");
-    let buttonReset = document.getElementsByClassName("reset");
+    let buttonStart = document.querySelector(".start")
+    let buttonPause = document.querySelector(".pause");
+    let buttonReset = document.querySelector(".reset");
     var myInterval;
     
-   buttonStart = function startTimer(){
-        seconds++;
-    
-        if (seconds <= 9){
-            secondsEl.textContent = "0" + seconds;
-        }
-    
-        if (seconds > 9) {
-            secondsEl.textContent = seconds;
-        }
-    
-        if(seconds > 59){
-            minutes++;
-            minutesEl.textContent = "0" + minutes;
-            seconds = 0;
-            secondsEl.textContent = "0" + seconds;
-        }
-    
-        if (minutes > 9){
-            minutesEl.textContent = minutes;
-        }
-    
-        myInterval = setInterval(startTimer, 1000);
+   function startTimer(){
+    seconds++; // seconds increase by 1
+
+    if (seconds <= 9){
+        secondsEl.innerHTML = "0" + seconds; //seconds less 9, display 00:07
     }
     
-    startTimer();  
-}
+    if (seconds > 9) {
+        secondsEl.innerHTML= seconds; //seco
+    }
 
+    if(seconds > 59){
+        minutes++;
+        minutesEl.innerHTML = "0" + minutes;
+        seconds = 0;
+        secondsEl.innerHTML = "0" + seconds;
+    }
+
+    if (minutes > 9){
+        minutesEl.innerHTML = minutes;
+    }
+
+    myInterval = setInterval(startTimer, 1000);
+}
+ 
+ 
+}
