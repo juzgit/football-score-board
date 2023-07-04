@@ -22,6 +22,10 @@ body{
     margin-right: 3px;
     padding: 10px;
     background-color: white;
+    height: 25px;
+    color:black;
+    display: flex;
+    align-items: center;
 }
 
 /* styling the teams elements */
@@ -30,7 +34,7 @@ body{
     align-items: center;
     background-color: #0E1E5B;
     height: 25px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .team1{
@@ -55,9 +59,7 @@ body{
     align-items: center;
     background-color: #091442;
     height: 25px;
-    padding: 5px;
-    margin-right: 5px;
-    margin-left:  5px;
+    padding: 10px;
 }
 
 .minus{
