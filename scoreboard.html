@@ -9,7 +9,7 @@
 <body>
     
     <div class="score-container">
-        <div class="time-wrapper">
+        <div class="timeWrapper">
              <span id="minutes">00</span>:<span id="seconds">00</span>
         </div>
 
@@ -20,9 +20,9 @@
         </div>
 
        <div class="scoresHolder">
-            <div class="score1">0</div>  
+            <span class="score1">0</span>  
                 <p class="minus">|</p>
-                    <div class="score2">0</div>
+                    <span class="score2">0</span>
        </div>
         
        
@@ -34,9 +34,14 @@
     </div>
 
     <div class="buttonsHolder">
-            <button class="start" onclick="startTimer()">Start</button>
-            <button class="stop"  onclick="stopTimer()">Stop</button>
-            <button class="reset" onclick="resetTimer()">Reset</button>
+            <button class="start" >Start</button>
+            <button class="stop"  >Stop</button>
+            <button class="reset" >Reset</button>
+    </div>
+
+    <div class="goalButtons">
+        <button class="goal1">Team 1 goal</button>
+        <button class="goal2">Team 2 goal</button>
     </div>
 
 
