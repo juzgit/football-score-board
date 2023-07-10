@@ -9,6 +9,7 @@
 <body>
     
     <div class="score-container">
+        
         <div class="timeWrapper">
              <span id="minutes">00</span>:<span id="seconds">00</span>
         </div>
@@ -29,19 +30,18 @@
         <div class="team2">
             <div class="team2kit"></div>
                     <p class="teamName2">MCI</p>
-           
         </div>
     </div>
 
     <div class="buttonsHolder">
-            <button class="start" >Start</button>
-            <button class="stop"  >Stop</button>
-            <button class="reset" >Reset</button>
+            <button class="start" onclick="start()" >Start</button>
+            <button class="stop"  onclick="stop()" >Stop</button>
+            <button class="reset" onclick="reset()" >Reset</button>
     </div>
 
     <div class="goalButtons">
-        <button class="goal1">Team 1 goal</button>
-        <button class="goal2">Team 2 goal</button>
+        <button class="goal1">Team 1 SCORED</button>
+        <button class="goal2">Team 2 SCORED</button>
     </div>
 
 
