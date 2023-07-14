@@ -1,10 +1,12 @@
 let minutesEl = document.getElementById("minutes");
 let secondsEl = document.getElementById("seconds");
+let timeHolder = document.getElementsByClassName("timeWrapper");
 var myInterval;
 
 function start(){
     let minutes = 0;
     let seconds = 0;
+    timeHolder.textContent = minutesEl + secondsEl;
     
     secondsEl.textContent = "0" + seconds;
     
@@ -47,4 +49,28 @@ function reset(){
     minutesEl.textContent = "0" + minutes;
     clearInterval(myInterval);
     setTimeout(myInterval);
+}
+
+const teamOne = document.getElementById("score1");
+const teamTwo = document.getElementById("score2");
+const resetScoreBtn = document.getElementById("resetScore");
+
+let homeTeam = 0;
+let awayTeam = 0;
+
+function teamOneGoal(){
+    homeTeam++;
+    teamOne.textContent = homeTeam;
+}
+
+function teamTwoGoal(){
+    awayTeam++;
+    teamTwo.textContent = awayTeam;
+}
+
+function restartGoals(){
+    homeTeam = 0;
+    awayTeam = 0;
+    teamOne.textContent = homeTeam;
+    teamTwo.textContent = awayTeam;
 }
