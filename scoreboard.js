@@ -1,40 +1,50 @@
-let seconds = 0;
-let minutes = 0;
+let minutesEl = document.getElementById("minutes");
+let secondsEl = document.getElementById("seconds");
+var myInterval;
 
 function start(){
-    let timeHolder = document.querySelector(".timeWrapper");
-    let minutesElChild = parentElement.querySelector("#minutes")[0];
-    let secondsElChild = parentElement.querySelector("#seconds")[1];
-    minutesElChild.textContent = "00";
-    secondsElChild.textContent = "00";
-    timeHolder.textContent = minutesElChild + ":" + secondsElChild;
-    let myInterval;
-
-    minutes = minutesElChild;
-    seconds = secondsElChildElChild;
-
-    seconds++;
-    clearInterval(myInterval);
-    myInterval = setInterval(start(), 1000);
+    let minutes = 0;
+    let seconds = 0;
     
-    if (seconds <= 9){
-        secondsElChild.textContent= "0" + seconds;
+    secondsEl.textContent = "0" + seconds;
     
-    } if(seconds > 9){
-        secondsElChild.textContent = seconds;
-   
-    } if(seconds > 59){
+    for (seconds = 0; seconds === 59; seconds++){
+      
+     if(seconds <= 9){
+        secondsEl.textContent;
+       
+    } if (seconds > 9){
+        seconds;
+      
+    } if (seconds === 59){
         minutes++;
-        minutesElChild.textContent = "0" + minutes;
         seconds = 0;
-        secondsElChild.textContent = "0" + seconds
-    
-    } if (minutes > 9){
-        minutesElChild.textContent = minutes;
-    
-    } if(minutes == 45){
-
+        minutesEl.textContent = "0" + minutes;
+       
+    } if(minutes > 9){
+        minutesEl.textContent = minutes;
+       
+    } if(minutes === 45){
+        stop();
+        alert("It is full-time");
+       }
+       
+      myInterval = setInterval(seconds, 1000);
     }
+    
+   myInterval = setTimeout(start, 1000);
+}
 
-    }
+function stop(){
+    clearInterval(myInterval);
+    setTimeout(myInterval,1000);
+}
 
+function reset(){
+   let seconds = 0;
+   let minutes = 0;
+    secondsEl.textContent = "0" + seconds;
+    minutesEl.textContent = "0" + minutes;
+    clearInterval(myInterval);
+    setTimeout(myInterval);
+}
