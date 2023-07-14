@@ -79,26 +79,70 @@ body{
     color:white
 }
 
-/*h5{
+/* styling the buttons */
+h4{
     text-align: center;
     margin-top: 0;
+    color: white;
 }
 
 .buttonHolders{
     display: flex;
     align-items: center;
     margin-top: 45px;
-    margin-left: 4rem;
+    margin-left: 3rem;
+    width: max-content;
+    padding-right: 5rem;
 }
 
-.TimesbuttonshHolder{
-    background-color: darkgoldenrod;
+.timesButtons{
+    background-color:#091442;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    margin-inline-start: 4rem;
+}
+
+#timeBtns{
+    border: none;
+    border-radius: 11px;
+    padding: 9px;
+    margin-inline: 4px;
+    width: 3rem;
+    background-color:#0E1E5B;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+#timeBtns:hover{
+    background-color: #3562A6;
 }
 
 .goalButtons{
-    background-color: darkorange;
-    padding-top: 25px;
-    padding-bottom: ;
-    margin-inline-start: 4rem;
-} */
+    background-color:#091442;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 4rem;
+} 
+
+.goalBtn{
+    border: none;
+    border-radius: 11px;
+    padding: 4px;
+    margin-inline: 4px;
+    width: 3rem;
+    background-color:#0E1E5B;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.goalBtn:hover{
+    background-color: #3562A6;
+}
 

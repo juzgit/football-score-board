@@ -34,30 +34,24 @@
         </div>
     </div>
 
-
-
     <div class="buttonHolders">
     
-        <div class="TimesbuttonsHolder">
-            <h5>Time Buttons</h5>
-            <button class="start" onclick="start()" >Start</button>
-            <button class="stop"  onclick="stop()" >Stop</button>
-            <button class="reset" onclick="reset()" >Reset</button>
+        <div class="timesButtons">
+            <h4>Time Buttons</h4>
+                <button class="start" id="timeBtns" onclick="start()">Start</button>
+                <button class="stop"  id="timeBtns" onclick="stop()">Stop</button>
+                <button class="reset" id="timeBtns" onclick="reset()">Reset</button>
         </div>
 
         <div class="goalButtons">
-            <h5>Goal Buttons</h5>
-            <button id="goal1" onclick="teamOneGoal()">Team 1 SCORED</button>
-            <button id="goal2" onclick="teamTwoGoal()">Team 2 SCORED</button>
-            <button id="resetScore" onclick="restartGoals()">Restart</button>
+            <h4>Goal Buttons</h4>
+            <button id="goal1" class="goalBtn" onclick="teamOneGoal()">Goal 1</button>
+            <button id="goal2" class="goalBtn" onclick="teamTwoGoal()">Goal 2</button>
+            <button id="resetScore" class="goalBtn" onclick="restartGoals()">Restart</button>
         </div>
 
     </div>
 </div>
-
-
-
-
 
     <script src="scoreboard.js"></script>
 </body>

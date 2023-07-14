@@ -51,9 +51,13 @@ function reset(){
     setTimeout(myInterval);
 }
 
+// This works
 const teamOne = document.getElementById("score1");
 const teamTwo = document.getElementById("score2");
 const resetScoreBtn = document.getElementById("resetScore");
+
+teamOne.style.color = "white";
+teamTwo.style.color = "white";
 
 let homeTeam = 0;
 let awayTeam = 0;
