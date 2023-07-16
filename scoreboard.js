@@ -1,32 +1,33 @@
 let minutesEl = document.getElementById("minutes");
 let secondsEl = document.getElementById("seconds");
-let timeHolder = document.getElementsByClassName("timeWrapper");
 var myInterval;
 
 function start(){
     let minutes = 0;
     let seconds = 0;
-    timeHolder.textContent = minutesEl + secondsEl;
     
     secondsEl.textContent = "0" + seconds;
+    minutesEl.textContent = "0" + minutes;
+
+    seconds++;
     
-    for (seconds = 0; seconds === 59; seconds++){
+    for (let i = 0; i == 59; i++){
       
-     if(seconds <= 9){
+     if(seconds[i] <= 9){
         secondsEl.textContent;
        
-    } if (seconds > 9){
+    } if (seconds[i] > 9){
         seconds;
       
-    } if (seconds === 59){
+    } if (seconds[i] == 59){
         minutes++;
         seconds = 0;
         minutesEl.textContent = "0" + minutes;
        
-    } if(minutes > 9){
+    } if(minutes[i] > 9){
         minutesEl.textContent = minutes;
        
-    } if(minutes === 45){
+    } if(minutes[i] == 45){
         stop();
         alert("It is full-time");
        }
@@ -35,6 +36,8 @@ function start(){
     }
     
    myInterval = setTimeout(start, 1000);
+
+   return timeHolder;
 }
 
 function stop(){
