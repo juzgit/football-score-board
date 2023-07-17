@@ -1,47 +1,51 @@
-var minutesEl = document.getElementById("minutes");
-var secondsEl = document.getElementById("seconds");
+let minutesEl = document.getElementById("minutes");
+let secondsEl = document.getElementById("seconds");
+const startBtn = document.querySelector(".start");
 var myInterval;
 
-var seconds;
-var minutes;
+startBtn.addEventListener("click", function() {
 
-function start(){
+    minutesEl.textContent = "00";
+    secondsEl.textContent = "00";
 
-    myInterval = setTimeout(start, 1000);
+    let fullTime = 11*60;
+
+    let totalTime = parseInt(minutesEl) + parseInt(secondsEl);
+
+    fullTime = totalTime;
+    
+
+    secondsEl++;
    
-     minutes = 0;
-     seconds = 0;
-
-    secondsEl.textContent = "0" + seconds;
-    minutesEl.textContent = "0" + minutes;
-
-     let totalMinutes = 11 * 60;
-    
-    
-    for (let i = 0; i <= 60; i++){
-        
-        seconds++;
-     
-        if(seconds <= 9){
-        secondsEl.textContent;
-       
-    } if (seconds > 9){
-        seconds;
-      
-    } if (seconds == 59){
-        minutes++;
-        seconds = 0;
-        minutesEl.textContent = "0" + minutes;
-       
-     } if(minutes == totalMinutes){
-        stop();
-        alert("It is full-time");
-       }
-       
-      myInterval = setInterval(seconds, 1000);
+    if(secondsEl <= 9){
+        totalTime = minutesEl + secondsEl;
+    } if(secondsEl == 9){
+        totalTime = minutesEl + parseInt("10") + secondsEl;
+    } if(secondsEl <= 19 ){
+        totalTime = minutesEl + secondsEl;
+    } if(secondsEl == 19){
+        totalTime = minutesEl + parseInt("20") + secondsEl;
+    } if(secondsEl <= 29){
+        totalTime = minutesEl + secondsEl;
+    } if(secondsEl == 29){
+        totalTime = minutesEl + parseInt("30") + secondsEl;
+    } if (secondsEl <= 39){
+        totalTime = minutesEl + secondsEl;
+    } if (secondsEl == 39){
+        totalTime = minutesEl + parseInt("40") + secondsEl;
+    } if (secondsEl <= 49 ){
+        totalTime = minutesEl + secondsEl;
+    } if (secondsEl == 49){
+        totalTime = minutesEl + parseInt("50") + secondsEl;
+    } if(secondsEl <= 59){
+        totalTime = minutesEl + secondsEl;
+    } if(secondsEl == 59){
+        minutesEl++;
+        totalTime = minutesEl + secondsEl;
     }
-   
-}
+}); 
+
+
 
 function stop(){
     clearInterval(myInterval);
