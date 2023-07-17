@@ -5,43 +5,43 @@ var myInterval;
 
 startBtn.addEventListener("click", function() {
 
-    minutesEl.textContent = "00";
-    secondsEl.textContent = "00";
+    minutesEl.innerHTML = "00";
+    secondsEl.innerHTML = "00";
 
     let fullTime = 11*60;
 
-    let totalTime = parseInt(minutesEl) + parseInt(secondsEl);
+    let totalTime = parseInt(minutesEl.innerHTML) + parseInt(secondsEl.innerHTML);
 
     fullTime = totalTime;
     
 
     secondsEl++;
    
-    if(secondsEl <= 9){
-        totalTime = minutesEl + secondsEl;
-    } if(secondsEl == 9){
-        totalTime = minutesEl + parseInt("10") + secondsEl;
-    } if(secondsEl <= 19 ){
-        totalTime = minutesEl + secondsEl;
-    } if(secondsEl == 19){
-        totalTime = minutesEl + parseInt("20") + secondsEl;
-    } if(secondsEl <= 29){
-        totalTime = minutesEl + secondsEl;
-    } if(secondsEl == 29){
-        totalTime = minutesEl + parseInt("30") + secondsEl;
-    } if (secondsEl <= 39){
-        totalTime = minutesEl + secondsEl;
-    } if (secondsEl == 39){
-        totalTime = minutesEl + parseInt("40") + secondsEl;
-    } if (secondsEl <= 49 ){
-        totalTime = minutesEl + secondsEl;
-    } if (secondsEl == 49){
-        totalTime = minutesEl + parseInt("50") + secondsEl;
-    } if(secondsEl <= 59){
-        totalTime = minutesEl + secondsEl;
-    } if(secondsEl == 59){
-        minutesEl++;
-        totalTime = minutesEl + secondsEl;
+    if(secondsEl.innerHTML <= 9){
+        totalTime = minutesEl.innerHTML + secondsEl.innerHTML;
+    } if(secondsEl.innerHTML == 9){
+        totalTime = minutesEl.innerHTML + parseInt("10") + secondsEl.innerHTML;
+    } if(secondsEl.innerHTML <= 19 ){
+        totalTime = minutesEl.innerHTML + secondsEl.innerHTML;
+    } if(secondsEl.innerHTML == 19){
+        totalTime = minutesEl.innerHTML + parseInt("20") + secondsEl.innerHTML;
+    } if(secondsEl.innerHTML <= 29){
+        totalTime = minutesEl.innerHTML + secondsEl.innerHTML;
+    } if(secondsEl.innerHTML == 29){
+        totalTime = minutesEl.innerHTML + parseInt("30") + secondsEl.innerHTML;
+    } if (secondsEl.innerHTML <= 39){
+        totalTime = minutesEl.innerHTML + secondsEl.innerHTML;
+    } if (secondsEl.innerHTML == 39){
+        totalTime = minutesEl.innerHTML + parseInt("40") + secondsEl.innerHTML;
+    } if (secondsEl.innerHTML <= 49 ){
+        totalTime = minutesEl.innerHTML + secondsEl.innerHTML;
+    } if (secondsEl.innerHTML == 49){
+        totalTime = minutesEl.innerHTML + parseInt("50") + secondsEl.innerHTML;
+    } if(secondsEl.innerHTML <= 59){
+        totalTime = minutesEl.innerHTML + secondsEl.innerHTML;
+    } if(secondsEl.innerHTML == 59){
+        minutesEl.innerHTML++;
+        totalTime = minutesEl.innerHTML + secondsEl.innerHTML;
     }
 }); 
 
