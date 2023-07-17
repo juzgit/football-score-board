@@ -1,4 +1,5 @@
 var second = 0;
+var timer = setInterval(start, 1000);
 function start( count ){
     return count > 9 ? count : '0' + count; }
     setInterval( function(){
@@ -9,14 +10,11 @@ function start( count ){
 
 
 
-/* function reset(){
-    clearInterval(myInterval);
-    seconds = "00";
-    minutes = "00";
-    secondsEl.textContent = seconds;
-    minutesEl.textContent = minutes;
-   
-} */
+function reset(){
+    second = 0;
+    document.getElementById('minutes').innerHTML = '00';
+    document.getElementById('seconds').innerHTML = '00';
+}
 
 // This works
 const teamOne = document.getElementById("score1");
