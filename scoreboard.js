@@ -49,7 +49,7 @@ function myCounter(){
     }
 }
 
-// This works
+
 const teamOne = document.getElementById("score1");
 const teamTwo = document.getElementById("score2");
 const resetScoreBtn = document.getElementById("resetScore");
