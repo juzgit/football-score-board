@@ -50,26 +50,35 @@ function myCounter(){
 }
 
 
+//getting the score elements
 const teamOne = document.getElementById("score1");
 const teamTwo = document.getElementById("score2");
+//gettting the reset score button
 const resetScoreBtn = document.getElementById("resetScore");
 
+//the text of the scores will be in white
 teamOne.style.color = "white";
 teamTwo.style.color = "white";
 
+//assigned the hometeam and awayteam default scores
 let homeTeam = 0;
 let awayTeam = 0;
 
+//made the teamOneGoal function
+//when team 1 scores it increments by pressing the goal 1 button
 function teamOneGoal(){
     homeTeam++;
     teamOne.textContent = homeTeam;
 }
 
+//made the teamOneGoal function
+//when team 1 scores it increments by pressing the goal 1 button
 function teamTwoGoal(){
     awayTeam++;
     teamTwo.textContent = awayTeam;
 }
 
+//resets the goals to their default scores
 function restartGoals(){
     homeTeam = 0;
     awayTeam = 0;
