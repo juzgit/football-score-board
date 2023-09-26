@@ -43,8 +43,8 @@ function myCounter(){
             secondsEl = "0" + seconds;
         }
 
-        document.getElementById("minutes").innerHTML = minutesEl;
-        document.getElementById("seconds").innerHTML = secondsEl;
+        document.getElementById("minutes").textContent = minutesEl;
+        document.getElementById("seconds").textContent = secondsEl;
         setTimeout(myCounter,1000);
     }
 }
